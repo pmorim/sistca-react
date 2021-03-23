@@ -1,13 +1,5 @@
 import React from "react";
-
-function MyPost({ data }) {
-  return (
-    <section className="post">
-      <h2 className="title">{data.title}</h2>
-      <p className="body">{data.body}</p>
-    </section>
-  );
-}
+import MyPost from "./MyPost";
 
 const posts = [
   {
@@ -28,6 +20,13 @@ function App() {
   return (
     <div className="App">
       {posts.map((post, i) => (
+        /**
+         * The keys can be any kind of basic type that can be treated as a hash
+         * value, for example: a number or string.
+         *
+         * We are using the index of the post in the array as the key.
+         * Remember that each key must be unique.
+         */
         <MyPost key={i} data={post} />
       ))}
     </div>
