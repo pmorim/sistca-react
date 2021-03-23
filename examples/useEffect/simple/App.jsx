@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 function App() {
   const [counter, setCounter] = useState(0);
   const increment = () => setCounter(counter + 1);
+  const decrement = () => setCounter(counter - 1);
   const reset = () => setCounter(0);
 
   // Only on Mount
@@ -32,8 +33,9 @@ function App() {
         <strong> {counter} times</strong>.
       </p>
 
-      <button onClick={reset}>Reset</button>
-      <button onClick={increment}>Increment</button>
+      <button onClick={increment}> + </button>
+      <button onClick={reset}> 0 </button>
+      <button onClick={decrement}> - </button>
     </div>
   );
 }
