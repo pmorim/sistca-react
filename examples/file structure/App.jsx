@@ -1,5 +1,5 @@
 import React from "react";
-import MyPost from "MyPost";
+import MyPost from "./MyPost";
 
 function App() {
   return (
