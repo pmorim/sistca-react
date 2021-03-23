@@ -1,6 +1,11 @@
 import React from "react";
 import MyPost from "./MyPost";
 
+/**
+ * Try to save this array in a JSON file and import it here.
+ * This will be usefull if the blog posts start gettings long.
+ * There is no need to clutter the main App file with all that text.
+ */
 const posts = [
   {
     title: "Hello World!",
@@ -22,7 +27,7 @@ function App() {
       {posts.map((post, i) => (
         /**
          * The keys can be any kind of basic type that can be treated as a hash
-         * value, for example: a number or string.
+         * value, such as a number or string.
          *
          * We are using the index of the post in the array as the key.
          * Remember that each key must be unique.
