@@ -2,9 +2,7 @@ import React, { useState } from "react";
 
 function App() {
   const [checked, setChecked] = useState(false);
-  function handleChange() {
-    setChecked(!checked); // Toggle the value
-  }
+  const handleChange = () => setChecked(!checked); // Toggle the value
 
   return (
     <div className="App">
