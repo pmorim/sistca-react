@@ -13,7 +13,8 @@ function App() {
     <div className="App">
       <h2>useState Hook</h2>
       <p>
-        The button bellow has been clicked <strong>{counter} times</strong>.
+        The button bellow has been clicked
+        <strong> {counter} times</strong>.
       </p>
 
       <button onClick={reset}>Reset</button>
