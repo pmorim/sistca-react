@@ -13,15 +13,8 @@ function App() {
       <form>
         {/* Add other inputs here for e-mail, password, etc... */}
 
-        <input
-          type="checkbox"
-          name="termsAndConditions"
-          value={checked}
-          onChange={handleChange}
-        />
-        <label for="termsAndConditions">
-          I have read and agreed with the terms and conditions.
-        </label>
+        <input type="checkbox" value={checked} onChange={handleChange} />
+        <label>I have read and agreed with the terms and conditions.</label>
 
         <br />
         <br />
