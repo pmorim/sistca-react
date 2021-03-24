@@ -1,9 +1,11 @@
 import React from "react";
 
 function App() {
+  const x = 1;
+
   return (
     <div className="App">
-      <h2>1 + 1 = {1 + 1}</h2>
+      <h2>{x === 1 && "Hello World!"}</h2>
     </div>
   );
 }
