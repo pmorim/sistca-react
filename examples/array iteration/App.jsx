@@ -13,11 +13,11 @@ const posts = [
   },
   {
     title: "Hello again",
-    body: "This is my second post",
+    body: "This is my second post.",
   },
   {
-    title: "Third times the charm",
-    body: "This is the power of 'props'",
+    title: "Third time's the charm",
+    body: "This is the power of 'props'.",
   },
 ];
 
