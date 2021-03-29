@@ -104,7 +104,42 @@ function App() {
    */
   return (
     <div className="App">
-      <h2>Hello World!</h2>
+      <header>
+        <h1>Rock, Paper, Scissors</h1>
+      </header>
+
+      <main>
+        <div>
+          <h2>
+            Score: {game.score.player} - {game.score.cpu}
+          </h2>
+        </div>
+
+        {game.started && (
+          <>
+            <p>
+              You: {game.round.choices.player}
+              <br />
+              CPU: {game.round.choices.cpu}
+              <br />
+            </p>
+            <h3>
+              {game.round.winner === "player" && "You win!"}
+              {game.round.winner === "cpu" && "You lose..."}
+              {game.round.winner === "draw" && "Draw."}
+            </h3>
+          </>
+        )}
+
+        <div>
+          Choose an option:
+          {Object.keys(choices).map((choice) => (
+            <button key={choice} onClick={() => play(choice)}>
+              {choice}
+            </button>
+          ))}
+        </div>
+      </main>
     </div>
   );
 }
