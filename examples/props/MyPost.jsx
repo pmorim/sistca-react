@@ -9,4 +9,17 @@ function MyPost({ data }) {
   );
 }
 
+/*
+* Instead of deconstructing the object, you can acces the props through it:
+* 
+* function MyPost(props) {
+*   return (
+*     <section className="post">
+*       <h2 className="title">{props.data.title}</h2>
+*       <p className="body">{props.data.body}</p>
+*     </section>
+*   );
+* }
+*/
+
 export default MyPost;
