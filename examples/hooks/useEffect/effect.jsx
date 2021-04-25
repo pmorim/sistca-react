@@ -3,23 +3,35 @@ import React, { useEffect, useState } from "react";
 function App() {
   const [clicks, setClicks] = useState(0);
 
-  // Only on Mount
+  /**
+   * Only on Mount
+   * 
+   * The callback function is only executed when the component gets mounted,
+   * i.e., the first render. Notice the empty dependency array.
+   */
   useEffect(() => {
     console.info("First render!");
   }, []);
 
-  // Dependency array
+  /**
+   * Dependency array
+   * 
+   * If instead you place one or multiple variables in the dependency array,
+   * then the callback function will only be executed when those variables
+   * change.
+   */
   useEffect(() => {
     console.info(`Number of clicks: ${clicks}`);
-  }, [counter]);
+  }, [clicks]);
 
-  // Component life-cycle
+  /**
+   * Component life-cycle
+   * 
+   * If you don't add a dependency array at all, then the callback function
+   * will be executed every time the components gets re-rendered.
+   */
   useEffect(() => {
-    // When the component gets rendered
-    console.info("Component rendered...");
-
-    // When the component gets unmounted
-    return () => console.info("Component unmounted...");
+    console.info("Re-render...");
   });
 
   return (
