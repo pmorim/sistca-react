@@ -16,8 +16,7 @@ To make your very first reactive Web GUI, you need to install `Node.js` and `npm
 
 ```bash
 sudo apt update
-sudo apt install nodejs -y
-sudo apt install npm -y
+sudo apt install nodejs npm -y
 ```
 
 You can confirm if it is installed by checking the installed version. If a version number is returned, that means it is installed.
