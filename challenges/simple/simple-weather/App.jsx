@@ -3,7 +3,7 @@ import axios from "axios";
 
 const API_ICON_BASE_URL = "http://openweathermap.org/img/wn/";
 const API_DATA_BASE_URL = "http://api.openweathermap.org/data/2.5/weather";
-const API_KEY = "e2d09fee3d5b9ea0d5db4e2a8ec2e272";
+const API_KEY = ""; // Place your API key here
 
 function App() {
   const [data, setData] = useState(null);
