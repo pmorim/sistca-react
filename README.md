@@ -12,11 +12,12 @@ This point of this repository is to enable the students to check and compare the
 
 ## Setup
 
-To make your very first reactive Web GUI, you need to install `Node.js`, which is a very important, and widely used, tool in Web Apps. If you get any trouble installing node, you can try [other installation methods](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04).
+To make your very first reactive Web GUI, you need to install `Node.js` and `npm` (Node Package Manager), which are very important, and widely used, tools in Web Apps. If you get any trouble during this step, you can try [other installation methods](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04).
 
 ```bash
 sudo apt update
-sudo apt install nodejs
+sudo apt install nodejs -y
+sudo apt install npm -y
 ```
 
 You can confirm if it is installed by checking the installed version. If a version number is returned, that means it is installed.
