@@ -1,4 +1,4 @@
-# Creating a Web GUI with React and Node.js
+# Creating a Web GUI with React
 
 ## Introduction
 
