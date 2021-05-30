@@ -15,12 +15,25 @@ const ICON_BASE_URL = "http://openweathermap.org/img/wn/";
 const DATA_BASE_URL = "http://api.openweathermap.org/data/2.5/weather";
 
 function App() {
+  /**
+   * The states of the app.
+   *
+   * - search: The value of the input bar.
+   * - city: The value that is sent to the API.
+   * - data: The data that is returned from the API.
+   * - error: The error that is returned from the API.
+   */
   const [search, setSearch] = useState("");
   const [city, setCity] = useState("New York");
-  const [error, setError] = useState(null);
   const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
 
-  // Fetch the OpenWeatherMap API
+  /**
+   * Fetch the OpenWeatherMap API.
+   *
+   * We used the 'useCallback' hook.
+   * Check React Hooks' documentation for more information on how it works.
+   */
   const fetchAPI = useCallback(async () => {
     await axios
       .get(DATA_BASE_URL + `?appid=${API_KEY}&units=metric&q=${city}`)
@@ -34,7 +47,13 @@ function App() {
       });
   }, [city]);
 
-  // Fetch the API when the page renders
+  /**
+   * Fetch the API when the page renders for the first time.
+   *
+   * Notice that even though the dependency array is not empty, it only
+   * contains the pointer to the function, which will never change. Thus,
+   * acting, practically, the same as an empty dependency array.
+   */
   useEffect(fetchAPI, [fetchAPI]);
 
   return (
