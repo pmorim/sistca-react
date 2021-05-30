@@ -45,7 +45,7 @@ npm start
 
 ## Authors
 
-Class: **3DA_Inglês** @2021
+Class: **3DA_Inglês** @ISEP2021
 
 - 1180798 **Pedro Morim**
 - 1180861 **Duarte Garcia**
