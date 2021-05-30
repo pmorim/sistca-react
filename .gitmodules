@@ -1,6 +1,0 @@
-[submodule "challenges/improved/challenges/improved/simple-weather"]
-	path = challenges/improved/challenges/improved/simple-weather
-	url = https://github.com/pmorim/sistca-react.git
-[submodule "challenge/simple-weather"]
-	path = challenge/simple-weather
-	url = https://github.com/pmorim/simple-weather.git
