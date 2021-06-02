@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This app was created to teach React in SISTCA's Lab Script at *Instituto Superior de Engenharia do Porto*
+This app was created to teach React in SISTCA's Lab Script at *Instituto Superior de Engenharia do Porto*.
 
 We start with a simple JavaScript and ES6 review. We then go onto explaining the basics of React. After that, we give the student a simple exercise that puts all the basics together. To finish it off, we give the student a challenge, i.e., an harder version of the previous exercise where the student will need to do some research on their own - search for libraries and read their documentation.
 
